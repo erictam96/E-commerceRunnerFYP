@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+        card_view:contentPadding="2dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OrderID"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:id="@+id/pickOrderID"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/soldOutBut"
+                android:text="customername"
+                android:layout_margin="10dp"
+                android:id="@+id/pickCustName"/>
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/soldOutBut"
+                android:src="@mipmap/ic_option"
+                android:background="@color/transparent"
+                android:scaleType="centerCrop"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                />
+            <View android:layout_height="1dp"
+                android:background="@color/orange"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/soldOutBut"
+                android:id="@+id/line_below_orderid"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item: "
+                android:id="@+id/itemLabel"
+                android:layout_below="@+id/line_below_orderid"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NMD black 1234"
+                android:id="@+id/itemText"
+                android:layout_below="@+id/line_below_orderid"
+                android:layout_toRightOf="@+id/itemLabel"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/titleTextColor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Var: "
+                android:id="@+id/variantLabel"
+                android:layout_below="@+id/itemLabel"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Black"
+                android:layout_alignStart="@+id/itemText"
+                android:id="@+id/variantText"
+                android:layout_below="@+id/itemLabel"
+                android:layout_toRightOf="@+id/variantLabel"
+                android:textColor="@color/titleTextColor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Qty: "
+                android:id="@+id/qtyLabel"
+                android:layout_below="@+id/variantLabel"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/itemText"
+                android:text="3 "
+                android:id="@+id/qtyText"
+                android:layout_below="@+id/variantLabel"
+                android:textColor="@color/titleTextColor"
+                android:layout_marginBottom="5dp"
+                />
+            <View android:layout_height="1dp"
+                android:background="@color/darkerGrey"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/qtyText"
+                android:id="@+id/line_below_qty"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop: "
+                android:id="@+id/shopLabel"
+                android:layout_below="@+id/line_below_qty"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TGIF"
+                android:id="@+id/shopText"
+                android:layout_below="@+id/line_below_qty"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/shopLabel"
+                android:textColor="@color/titleTextColor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Addr: "
+                android:id="@+id/addressLabel"
+                android:layout_below="@+id/shopLabel"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/shopText"
+                android:layout_toRightOf="@+id/addressLabel"
+                android:text="Jalan Harimau Durian,Lorong Belakang,Wilayah Persekutuan Wangsa Maju,12345."
+                android:id="@+id/addressText"
+                android:layout_below="@+id/shopLabel"
+                android:layout_marginEnd="5dp"/>
+
+            <View android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/darkerGrey"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/addressText"
+                android:id="@+id/line_below_address"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination:"
+                android:textStyle="bold"
+                android:layout_below="@+id/line_below_address"
+                android:layout_marginStart="10dp"
+                android:id="@+id/destinationLabel"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/destinationLabel"
+                android:layout_below="@+id/line_below_address"
+                android:text="jalan chow kit,asdadadad asdasdasdasda sdasdasdad adadada"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/destinationText"/>
+
+            <View android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/darkerGrey"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/destinationText"
+                android:id="@+id/line_below_delivery_address"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line_below_delivery_address"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/orange"
+                android:textColor="@color/White"
+                android:layout_centerHorizontal="true"
+                android:text="Pick"
+                android:id="@+id/pickBut"/>
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">E-commerce R FYP</string>
+    <string name="loading">Loading</string>
+    <string name="sessionexp">Session Expired. Please login again</string>
+    <string name="delayCancelMsg">We strongly not encourage short selling. Are you sure want to proceed?</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancelOrderWarning">Warning!!!\n\n-Cancel order will make customer unable to search the canceled products and label as sold out. \n-System will refund canceled order item money to our customer and the refund cost will pay by merchant.\n-each cancelation consider short selling\n-when number of short selling reached our threshold limit, merchant account will be freezed for investigation \n\nAre you sure want to cancel order?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="doneCancel">Done cancel order</string>
+    <string name="cancelOrder">canceling order</string>
+    <string name="cancelorderMsg">canceling customer order, existing item will not be shown to customer, please wait</string>
+
+</resources>
