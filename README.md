@@ -6,6 +6,10 @@ This Android App is for my university final year project. This Runner app allow 
 - Drop item by scanning QR code
 - Login by using google firebase 
 
+# Usage
+- Firebase Authentication
+- Fabric for crashlytic and beta deploy
+
 # Sample Screenshot
 
 ![alt text](https://s15.postimg.cc/nim6xo79n/runner.jpg) Figure 1: Runner Main UI</br>
