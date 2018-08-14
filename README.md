@@ -1,5 +1,6 @@
 # E-commerce Runner Android App FYP
-This Android App is for my university final year project. This Runner app allow to pickup item from retailer and send to customer.
+This Android App is for my university final year project. This Runner app allow to pickup item from retailer and send to customer. This project has 3 app (Customer, Runner and Merchant). You can refer to my github repo. Thank you
+
 
 # Funtional Module
 - Pickup & Delivery Item with recyclerview 
