@@ -1,6 +1,9 @@
 # E-commerce Runner Android App FYP
 This Android App is for my university final year project. This Runner app allow to pickup item from retailer and send to customer. This project has 3 app (Customer, Runner and Merchant). You can refer to my github repo and backend PHP is not published in Github. Thank you
 
+# Login
+- ID : s@s.com
+- PASSWORD: 123456
 
 # Funtional Module
 - Pickup & Delivery Item with recyclerview 
